@@ -16,9 +16,10 @@ function Header() {
         <SearchIcon className="header__searchIcon" />
       </div>
       <Link to="/" className="header__link">
-        <div className="header__option"></div>
-        <span className="header__optionLineOne">Hello User</span>
-        <span className="header__optionLineTwo">Sign In or Sign Out</span>
+        <div className="header__option">
+          <span className="header__optionLineOne">Hello, User</span>
+          <span className="header__optionLineTwo">Sign In or Sign Out</span>
+        </div>
       </Link>
     </nav>
   );
