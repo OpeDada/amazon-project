@@ -32,6 +32,11 @@
   background-color: #cd904d;
 }
 
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .header__option {
   display: flex;
   flex-direction: column;
