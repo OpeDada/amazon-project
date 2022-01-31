@@ -9,12 +9,9 @@ function App() {
       <div className="App">
         {" "}
         <Switch>
-          <Route path="/checkout">
-            <Header />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
+          <Route exact path="/" element={<Header />} />
+          <Route path="/checkout" element={<Header />} />
+          <Route path="/login" element={<Login />} />
         </Switch>
       </div>
     </Router>
