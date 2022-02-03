@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/stylesheets/Login.css"
 
 function Login() {
   return (
     <div className="login">
+      <Link>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thum/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt="Amazon logo" />
+      </Link>
       <div className="login__container">
         <h1>Sign In</h1>
         <form autoComplete="off">
