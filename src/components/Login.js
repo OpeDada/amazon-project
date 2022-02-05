@@ -24,6 +24,7 @@ function Login() {
           </button>
         </form>
         <p>By signing in, you agree to Amazon's Terms and Conditions</p>
+        <button className="login__registerButton">Create your Amazon Account</button>
       </div>
     </div>
   );
