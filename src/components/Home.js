@@ -1,5 +1,7 @@
 import React from "react";
 import Product from "./Product";
+import "../assets/stylesheets/Home.css";
+
 
 function Home() {
   return (
