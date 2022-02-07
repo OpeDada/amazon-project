@@ -17,6 +17,20 @@ function Home() {
           rating={4}
           image="https://m.media-amazon.com/images/I/51CZok8eeaL._AC_SL1000_.jpg"
         />
+        <Product
+          id="1"
+          title="Nano Toothbrush"
+          price={800.96}
+          rating={4}
+          image="https://m.media-amazon.com/images/I/51CZok8eeaL._AC_SL1000_.jpg"
+        />
+        <Product
+          id="1"
+          title="Nano Toothbrush"
+          price={800.96}
+          rating={4}
+          image="https://m.media-amazon.com/images/I/51CZok8eeaL._AC_SL1000_.jpg"
+        />
       </div>
     </div>
   );
