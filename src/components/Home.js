@@ -40,7 +40,7 @@ function Home() {
           rating={4}
           image="https://m.media-amazon.com/images/I/61WEouzfEaL._AC_SL1500_.jpg"
         />
-        <Product
+        {/* <Product
           id="5"
           title="FORRICA Women's Mini Shoulder Bag"
           price={2977}
@@ -52,8 +52,8 @@ function Home() {
           title="https://m.media-amazon.com/images/I/51c8bpkEkGL._AC_SL1060_.jpg"
           price={1980}
           rating={4}
-          image="https://m.media-amazon.com/images/I/61A95jgYtYL._AC_UL1001_.jpg"
-        />
+          image="https://m.media-amazon.com/images/I/51c8bpkEkGL._AC_SL1060_.jpg"
+        /> */}
       </div>
     </div>
   );
