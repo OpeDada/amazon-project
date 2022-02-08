@@ -60,7 +60,7 @@ function Home() {
         <div className="product__home">
           <Product
             id="6"
-            title="https://m.media-amazon.com/images/I/51c8bpkEkGL._AC_SL1060_.jpg"
+            title="Wireless Mouse, Bluetooth"
             price={1980}
             rating={4}
             image="https://m.media-amazon.com/images/I/51c8bpkEkGL._AC_SL1060_.jpg"
