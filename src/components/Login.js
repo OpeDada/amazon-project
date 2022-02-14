@@ -1,8 +1,17 @@
 import React from "react";
+import { auth } from '../firebase'
 import { Link } from "react-router-dom";
 import "../assets/stylesheets/Login.css";
 
 function Login() {
+
+  const [useremail, setUserEmail] = useState('')
+  comst [userpassword, setUserPassword] = usestate('')
+
+  const loginuser = event => {
+    event.preventDefault()
+    auth.signInWithEmailAndPassword(email,password)
+  }
   return (
     <div className="login">
       <Link to="/">
@@ -19,7 +28,7 @@ function Login() {
           <input type="email" placeholder="Email" />
           <h5>Password</h5>
           <input type="password" placeholder="Password" />
-          <button type="submit" className="login__signInButton">
+          <button onClick={loginuser} type="submit" className="login__signInButton">
             Sign In
           </button>
         </form>
