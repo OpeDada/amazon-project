@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { auth } from '../firebase'
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "../assets/stylesheets/Login.css";
 
 function Login() {
 
+  const history = useHistory()
   const [useremail, setUserEmail] = useState('')
-  comst [userpassword, setUserPassword] = usestate('')
+  const [userpassword, setUserPassword] = useState('')
 
   const loginuser = event => {
     event.preventDefault()
     auth.signInWithEmailAndPassword(email,password)
+    .then((auth) => {
+      history.push('/')
+    })
+    .catch(e => alert(e.message))
   }
   return (
     <div className="login">
