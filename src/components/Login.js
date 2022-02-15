@@ -11,7 +11,7 @@ function Login() {
 
   const loginuser = event => {
     event.preventDefault()
-    auth.signInWithEmailAndPassword(email,password)
+    auth.signInWithEmailAndPassword(useremail,userpassword)
     .then((auth) => {
       navigate('/')
     })
@@ -30,15 +30,31 @@ function Login() {
         <h1>Sign In</h1>
         <form autoComplete="off">
           <h5>Email</h5>
-          <input type="email" placeholder="Email" />
+          <input
+            value={useremail}
+            onChange={(event) => setUserEmail(event.target.value)}
+            type="email"
+            placeholder="Email"
+          />
           <h5>Password</h5>
-          <input type="password" placeholder="Password" />
-          <button onClick={loginuser} type="submit" className="login__signInButton">
+          <input
+            value={userpassword}
+            onChange={(event) => setUserPassword(event.target.value)}
+            type="password"
+            placeholder="Password"
+          />
+          <button
+            onClick={loginuser}
+            type="submit"
+            className="login__signInButton"
+          >
             Sign In
           </button>
         </form>
         <p>By signing in, you agree to Amazon's Terms and Conditions</p>
-        <button className="login__registerButton">Create your Amazon Account</button>
+        <button className="login__registerButton">
+          Create your Amazon Account
+        </button>
       </div>
     </div>
   );
