@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from '../firebase'
-import { Link, useHistory } from "react-router-dom";
 import "../assets/stylesheets/Login.css";
 
 function Login() {
 
-  const history = useHistory()
+  const navigate = useNavigate()
   const [useremail, setUserEmail] = useState('')
   const [userpassword, setUserPassword] = useState('')
 
@@ -13,7 +13,7 @@ function Login() {
     event.preventDefault()
     auth.signInWithEmailAndPassword(email,password)
     .then((auth) => {
-      history.push('/')
+      navigate('/')
     })
     .catch(e => alert(e.message))
   }
