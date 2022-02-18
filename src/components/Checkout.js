@@ -1,8 +1,12 @@
 import React from "react"
 import Subtotal from "./Subtotal"
+import { useStateValue } from "../StateProvider";
 import "../assets/stylesheets/Checkout.css";
 
 function Checkout() {
+
+  const[{basket}] = useStateValue()
+  
   return (
     <div className="checkout">
       <div className="checkout__left">
