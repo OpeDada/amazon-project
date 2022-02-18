@@ -18,8 +18,7 @@ function ProductCart({id, title, image, price, rating}){
       <img className="productcart__image" src={image} alt="" />
       <div className="productcart__info">
         <p>{title}</p>
-        <small>¥</small>
-        <p>{price}</p>
+        <p>¥{price}</p>
       </div>
       <div>
         {Array(rating)
