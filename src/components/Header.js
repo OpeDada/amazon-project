@@ -11,25 +11,27 @@ function Header() {
 
   return (
     <nav className="header">
-      <img
-        className="header__logo"
-        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        alt="logo"
-      />
+      <Link to="/" className="header__link">
+        <img
+          className="header__logo"
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="logo"
+        />
+      </Link>
       <div className="header__search">
         <input type="text" className="header__searchInput" />
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
         {/* first link */}
-        <Link to="/" className="header__link">
+        <Link to="#" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Hello, User</span>
             <span className="header__optionLineTwo">Sign</span>
           </div>
         </Link>
         {/* second link */}
-        <Link to="/" className="header__link">
+        <Link to="#" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Returns</span>
             <span className="header__optionLineTwo">& orders</span>
@@ -41,7 +43,9 @@ function Header() {
         <div className="header__optionBasket">
           <ShoppingBasketIcon />
           {/* number of items in the basket */}
-          <span className="header__optionLineTwo header__productCount">{basket?.length}</span>
+          <span className="header__optionLineTwo header__productCount">
+            {basket?.length}
+          </span>
         </div>
       </Link>
     </nav>
