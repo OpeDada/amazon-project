@@ -6,11 +6,31 @@ import "../assets/stylesheets/ProductCart.css";
 function ProductCart({id, title, image, price, rating}){
 
   const [{basket}, dispatch] = useStateValue()
-  return(
-    <div className="productcart">
 
+  const removeItem = () => {
+    dispatch({
+      type: 'REMOVE_FROM_CART',
+      id: id
+    })
+  }
+  return (
+    <div className="productcart">
+      <img className="productcart__image" src={image} alt="" />
+      <div className="productcart__info">
+        <p>{title}</p>
+        <small>¥</small>
+        <p>{price}</p>
+      </div>
+      <div>
+        {Array(rating)
+          .fill()
+          .map((_) => {
+            <p>*</p>;
+          })}
+      </div>
+      <button onClick={removeItem}>Remove from the Cart</button>
     </div>
-  )
+  );
 }
 
 export default ProductCart
