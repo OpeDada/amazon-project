@@ -1,6 +1,7 @@
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import CurrencyFormat from "react-currency-format";
+import "../assets/stylesheets/Subtotal.css";
 
 function Subtotal() {
   const getCartTotal = (basket) =>
@@ -25,7 +26,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"¥"}
       />
-      <button>Proceed to Checkout</button>
+      <button className="checkout__button">Proceed to Checkout</button>
     </div>
   );
 }
