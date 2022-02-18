@@ -8,10 +8,10 @@ import { auth } from "../firebase";
 
 function Header() {
 
-  const [{basket, user}, dispatch] = useStateValue()
+  const [{basket, loggedinuser}, dispatch] = useStateValue()
 
   const logoutUser = () => {
-    if(user){
+    if(loggedinuser){
       auth.signOut()
     }
   }
@@ -31,10 +31,14 @@ function Header() {
       </div>
       <div className="header__nav">
         {/* first link */}
-        <Link to={!user && "/login"} className="header__link">
+        <Link to={!loggedinuser && "/login"} className="header__link">
           <div onClick={logoutUser} className="header__option">
-            <span className="header__optionLineOne">Hello, {user?.email}</span>
-            <span className="header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
+            <span className="header__optionLineOne">
+              Hello, {loggedinuser?.email}
+            </span>
+            <span className="header__optionLineTwo">
+              {loggedinuser ? "Sign Out" : "Sign In"}
+            </span>
           </div>
         </Link>
         {/* second link */}
