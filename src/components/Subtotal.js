@@ -1,7 +1,12 @@
 import React from "react";
+import { useStateValue } from "../StateProvider";
 import CurrencyFormat from "react-currency-format";
 
 function Subtotal() {
+  const getCartTotal = (basket) =>
+    //similar to foreach/map. to reduce the elements in the array and return a new value
+    basket?.reduce((amount, item) => item.price + amount, 0);
+
   const [{ basket }, dispatch] = useStateValue();
   return (
     <div className="subtotal">
@@ -11,7 +16,7 @@ function Subtotal() {
         renderText={(value) => (
           // display the price
           <p>
-            Subtotal({basket.length} items) : <strong>{`${value}`}</strong>
+            Subtotal({basket.length} item{basket.length > 1 && 's'}) : <strong>{`${value}`}</strong>
           </p>
         )}
         decimalScale={2}
