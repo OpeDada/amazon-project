@@ -1,10 +1,15 @@
 import React from "react"
+import { useStateValue } from "../StateProvider";
 import "../assets/stylesheets/ProductCart.css";
 
 
-function ProductCart(){
+function ProductCart({id, title, image, price, rating}){
+
+  const [{basket}, dispatch] = useStateValue()
   return(
-    <div></div>
+    <div className="productcart">
+
+    </div>
   )
 }
 
