@@ -26,15 +26,16 @@ function Checkout() {
                 image={item.image}
                 price={item.price}
                 rating={item.rating}
-
               />
             ))}
           </div>
         )}
       </div>
-      <div className="checkout__right">
-        <Subtotal />
-      </div>
+      {basket.length > 0 && (
+        <div className="checkout__right">
+          <Subtotal />
+        </div>
+      )}
     </div>
   );
 }
