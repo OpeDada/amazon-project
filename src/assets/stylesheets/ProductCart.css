@@ -8,6 +8,7 @@
   object-fit: contain;
   width: 160px;
   height: 160px;
+  border: 1px solid #ccc;
 }
 
 .productcart__title {
