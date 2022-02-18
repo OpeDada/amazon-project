@@ -6,6 +6,7 @@ import "../assets/stylesheets/Checkout.css";
 import Product from "./Product";
 
 function Checkout() {
+  // get the content of our basket
   const [{ basket }] = useStateValue();
 
   return (
