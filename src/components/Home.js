@@ -26,7 +26,7 @@ function Home() {
             id="2"
             title="SNIDEL x Victorian Mask"
             price={770}
-            rating={4}
+            rating={5}
             image="https://m.media-amazon.com/images/I/4108iPOB3aL._AC_SL1000_.jpg"
           />
         </div>
@@ -35,7 +35,7 @@ function Home() {
             id="3"
             title="SWIFTBIRD Slip-on Sneakers"
             price={1500}
-            rating={4}
+            rating={3}
             image="https://m.media-amazon.com/images/I/61A95jgYtYL._AC_UL1001_.jpg"
           />
         </div>
@@ -53,7 +53,7 @@ function Home() {
             id="5"
             title="FORRICA Women's Mini Shoulder Bag"
             price={2977}
-            rating={4}
+            rating={5}
             image="https://m.media-amazon.com/images/I/61Ww0Le8YfL._AC_UL1500_.jpg"
           />
         </div>
@@ -62,7 +62,7 @@ function Home() {
             id="6"
             title="Wireless Mouse, Bluetooth"
             price={1980}
-            rating={4}
+            rating={3}
             image="https://m.media-amazon.com/images/I/51c8bpkEkGL._AC_SL1060_.jpg"
           />
         </div>

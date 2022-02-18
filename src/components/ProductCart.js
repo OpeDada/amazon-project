@@ -20,9 +20,10 @@ function ProductCart({ id, title, image, price, rating }) {
       <div className="product__rating" key={id}>
         {Array(rating)
           .fill()
-          .map((_) => {
-            <p>*</p>;
-          })}
+          .map((_) => (
+            <p>*</p>
+          ))
+          }
       </div>
       <button onClick={removeItem}>Remove from the Cart</button>
           </div>
